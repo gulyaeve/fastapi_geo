@@ -8,4 +8,8 @@ class City(BaseModel):
 
     def get(self):
         return self.longitude, self.latitude, self.name
-    
+
+
+class Coordinates(BaseModel):
+    latitude: float
+    longitude: float
