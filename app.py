@@ -14,7 +14,8 @@ app.include_router(geo_router)
 def start():
     redis_cache = FastApiRedisCache()
     redis_cache.init(
-        host_url=settings.redis_url
+        host_url=settings.redis_url,
+        prefix="myapi-cache",
     )
 
 @app.get("/")
