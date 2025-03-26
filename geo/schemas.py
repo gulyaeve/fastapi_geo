@@ -8,4 +8,10 @@ class City(BaseModel):
 
     def get(self):
         return self.longitude, self.latitude, self.name
-    
+
+
+class CityDist(BaseModel):
+    city1: str
+    city2: str
+    dist: float
+    unit: str
