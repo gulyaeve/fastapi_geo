@@ -14,4 +14,6 @@ with open("russian-cities.json") as file:
 
 for city in cities:
     # print(city, end="\n\n")
-    print((city['coords']['lat'], city['coords']['lon'], city['name']))
+    data = (city['coords']['lon'], city['coords']['lat'], city['name'])
+    print(data)
+    cache.geoadd("cities", data)
