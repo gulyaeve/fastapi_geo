@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from geo.geo import router as geo_router
+from city.city import router as geo_router
 
 
 app = FastAPI()

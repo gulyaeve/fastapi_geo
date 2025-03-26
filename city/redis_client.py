@@ -1,5 +1,5 @@
 from redis.asyncio import Redis
-from geo.schemas import City
+from city.schemas import City
 
 cache = Redis()
 
