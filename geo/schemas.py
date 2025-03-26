@@ -13,3 +13,10 @@ class City(BaseModel):
 class Coordinates(BaseModel):
     latitude: float
     longitude: float
+
+
+class Distance(BaseModel):
+    city_from: str
+    city_to: str
+    distance: float
+    unit: str
