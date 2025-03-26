@@ -1,6 +1,5 @@
 from redis.asyncio import Redis
 from geo.schemas import City
-import logging
 
 cache = Redis()
 
