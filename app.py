@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from city.city import router as geo_router
+from image.router import router as image_router
 from fastapi_redis_cache import FastApiRedisCache, cache
 from settings import settings
 from time import sleep
@@ -8,6 +9,7 @@ from time import sleep
 app = FastAPI()
 
 app.include_router(geo_router)
+app.include_router(image_router)
 
 
 @app.on_event("startup")
