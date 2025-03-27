@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
   <diagram name="Страница — 1" id="WQwuP09TPoMwarvuiuxg">
-    <mxGraphModel dx="1142" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="566" dy="344" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -125,10 +125,10 @@
           <mxGeometry x="320" y="1310" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="KBHfh1e-qDfWNZJxdLg--17" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
-          <mxGeometry x="330" y="1190" width="60" height="80" as="geometry" />
+          <mxGeometry x="325" y="1150" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="KBHfh1e-qDfWNZJxdLg--18" value="Redis" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="470" y="1280" width="80" height="80" as="geometry" />
+          <mxGeometry x="440" y="1169" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="KBHfh1e-qDfWNZJxdLg--23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="KBHfh1e-qDfWNZJxdLg--21" target="KBHfh1e-qDfWNZJxdLg--16" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -183,6 +183,18 @@
         </mxCell>
         <mxCell id="cM8j93rt0SA525iANO2E-14" value="consumer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="530" y="1458" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cM8j93rt0SA525iANO2E-15" value="RabbitMQ" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cM8j93rt0SA525iANO2E-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.845;entryY=0.991;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="KBHfh1e-qDfWNZJxdLg--16" target="cM8j93rt0SA525iANO2E-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cM8j93rt0SA525iANO2E-17" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;https://github.com/gulyaeve/VideoRoundBot&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1820" width="500" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cM8j93rt0SA525iANO2E-18" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Практическая работа&lt;br&gt;1) Сделать отправку сообщения в канал Redis для обработки видео&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;2) Сделать worker, который будет обрабатывать видео&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="1900" width="475" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
