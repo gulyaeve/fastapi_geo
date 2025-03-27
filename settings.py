@@ -4,6 +4,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     REDIS_HOST: str
     REDIS_PORT: int
+    REDIS_PASS: str
 
     @property
     def redis_url(self):
