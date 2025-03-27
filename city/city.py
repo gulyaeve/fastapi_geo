@@ -1,8 +1,10 @@
+from typing import Literal
+
 from fastapi import APIRouter, status, HTTPException
 from schemas import City, Coordinates, Distance
 from redis_client import add_city, get_city, get_distance
 
-router = APIRouter(prefix="/geo")
+router = APIRouter(prefix="/city")
 
 
 @router.post("/", status_code=status.HTTP_201_CREATED)
@@ -34,7 +36,7 @@ async def get_city_coordinates(city_name: str):
 async def calculate_distance(
         city1: str,
         city2: str,
-        unit: str = "km"
+        unit: Literal["m", "km", "mi", "ft"] = "km"
 ):
     if unit not in ["m", "km", "mi", "ft"]:
         raise HTTPException(
