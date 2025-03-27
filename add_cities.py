@@ -1,12 +1,5 @@
 import json
-from redis import Redis
-from settings import settings
-
-
-cache = Redis(
-    host=settings.REDIS_HOST,
-    port=settings.REDIS_PORT
-)
+from config import cache
 
 with open("russian-cities.json") as file:
     cities = json.loads(file.read())
